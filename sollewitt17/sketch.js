@@ -1,8 +1,13 @@
+/**
+* Kevin's notes: Great work on this so far!  I've added one note about the variables on lines 11-13
+*/
 function setup() {
   createCanvas(1000,600);
 }
 
 function draw() {
+  //these variables could be made global (available to other functions later on)
+  //Consider moving these variable declarations above your function setup line
   var boxWidth = floor(width/4);
   var padding = 10;
   var lineSpacing = 5;
