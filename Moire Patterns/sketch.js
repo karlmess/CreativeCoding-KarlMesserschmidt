@@ -1,3 +1,6 @@
+/**
+* Kevin's notes: really fantastic work!  Keep up the good work.
+*/
 var lineSpacing = 5;
 var theta1=0.0;
 var theta2=0.0;
