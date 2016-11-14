@@ -1,3 +1,8 @@
+/**
+** Kevin's comments:  Really nice work here!  I appreciate the code comments, as well as the nice clean code.
+Simple and effective!
+See inline for more code-related comments...
+**/
 //  Use arrow keys to move around the canvas
 //  Use spacebar to talk, Shift to blink
 //  Eyes follow mouse
@@ -19,6 +24,7 @@ function Guy(xPos, yPos) {
 Guy.prototype = {
   constructor : Guy,
   head : function(){
+    //I don't think you need to call colorMode here since you should alread be in HSB mode
     colorMode(HSB);
     //--Pompom
     fill(this.hatColor2,250,100);
@@ -199,7 +205,11 @@ function setup() {
 function draw() {
   background(255);
   walk(); // Oscillates between 1 and -1, used in Guy.legs()
+  //remember those semicolons!
   guy = new Guy(characterX,characterY)
+  //try creating a method inside your Guy object that creates the body parts so that you can just call something like:
+  //guy.draw();
+  //and internally the method will call torso(), arms(), legs(), head(), etc.
   guy.torso();
   guy.arms();
   guy.legs();
